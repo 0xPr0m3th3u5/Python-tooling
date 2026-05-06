@@ -22,7 +22,7 @@ The OS:
 - may resolve the DNS first if used a hostname
 - performs three way handshake.
 
-> NOTE: `connect()` does not send your data
+NOTE: `connect()` does not send your data
 
 ### Send bytes
 
@@ -49,7 +49,7 @@ The kernel receives the packets from the network and places the payload into the
 
 Then `recv()` copies some of those bytes from kernel space into your python process.
 
-> recv(4096) means "Up to 4096 bytes"
+NOTE: recv(4096) means "Up to 4096 bytes"
 
 ### close
 
