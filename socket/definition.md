@@ -17,19 +17,19 @@ it means:
 - you read/write through that handle
 - the kernel moves bytes in and out of nework buffers
 
-s = socket.socket(...)
+```s = socket.socket(...)```
 
 
 ## Three layers
 
-1. Application layer
+### 1. Application layer
 
 The python code decides:
 - what bytes to send
 - When to send
 - how to parse replies
 
-2. Transport layer
+### 2. Transport layer
 - TCP
 - UDP
 
@@ -39,7 +39,7 @@ Decides:
 - retransmission
 - connection behavior
 
-3. OS / Kernel layer
+### 3. OS / Kernel layer
 
 It handles:
 - routing
